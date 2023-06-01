@@ -1,0 +1,24 @@
+
+
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="user">
+  <div class="navbar-nav">
+   
+      <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+   
+      <a class="nav-item nav-link" [routerLink]="['/Jobspage']" routerLinkActive="active">Jobs page</a>
+      <div class="ml-auto">
+      <a class="nav-item nav-link justify-content-end" (click)="logout()">Logout</a>
+      
+  </div>
+  </div>
+</nav>
+
+<div class="app-container" [ngClass]="{ 'bg-light': user }">
+  <alert></alert>
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
+

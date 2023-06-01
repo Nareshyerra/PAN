@@ -1,0 +1,52 @@
+<form #contactForm="ngForm" (ngSubmit)="postcontact(contactForm.value)">
+    <input type="text" placeholder="ENTER JOBID" name="jobid" ngModel>
+    <input type="text" placeholder="ENTER COMPANY NAME" name="company" ngModel>
+    <input type="text" placeholder="Enter JOBTITLE" name="jobtitle" ngModel>
+    <input type="text" placeholder="Experience" name="Experience" ngModel>
+    
+    <!-- <label for="datepicker">joining Date</label>
+  <input type="date" id="datepicker" name="datepicker"> -->
+  
+   
+  
+    <button>Post Job</button>
+  </form>
+  <h1 *ngIf="istrue">Job posted sucessfully</h1>
+  
+  
+  
+  <!-- <table class="table table-success table-striped">
+    <thead>
+        <tr>
+            <th>JOB ID</th>
+            <th>COMPANY</th>
+            <th>JOB TITLE</th>
+            <th>EXPERIENCE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of jobsList">
+            <th>{{ item.id }}</th>
+            <td>{{ item.company }}</td>
+            <td>{{ item.jobtitle }}</td>
+            <td>{{ item.Experience }}</td>
+           
+          
+        </tr>
+    </tbody>
+  </table> -->
+  
+  
+  
+  
+  
+  
+  
+<!--   
+  <p *ngIf="msgTrue">updated sucessfully</p>
+  <button (click)="updateContact(2)">update contact</button>
+  <div *ngIf="msgTrue">contact updated </div>
+  <button (click)="deleteContact(10)">Delete</button> -->
+
+
+ 

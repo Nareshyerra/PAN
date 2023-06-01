@@ -1,0 +1,34 @@
+<!-- <div class="p-4">
+    <div class="container"> -->
+        <!-- <h1 class="d-flex justify-content-center">Hi {{user.firstName}}!</h1> -->
+       
+        <table class="table table-success table-striped">
+            <thead>
+                <tr>
+                    <th>JOB ID</th>
+                    <th>COMPANY</th>
+                    <th>JOB TITLE</th>
+                    <th>EXPERIENCE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of jobsList">
+                    <th>{{ item.jobid }}</th>
+                    <td>{{ item.company }}</td>
+                    <td>{{ item.jobtitle }}</td>
+                    <td>{{ item.Experience }}</td>
+
+                   
+                  </tr>
+            </tbody>
+          </table>
+          
+
+
+
+
+
+
+
+    <!-- </div>
+</div> -->
